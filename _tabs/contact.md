@@ -1,0 +1,41 @@
+---
+title: Contact
+icon: fas fa-address-card
+order: 3
+---
+
+Social media links are in the bottom left, or you can email at [ben@benleppke.com](mailto:ben@benleppke.com)
+
+
+Also here is my pgp public key if you're into that sort of thing.
+
+```
+----BEGIN PGP PUBLIC KEY BLOCK-----
+ mQENBFVvFBwBCACuy/uCwn1ja7v6qKf8D1IurlI4vQ5L2nh3vx/TgzfQaGXcnEFp
+ l/KbdH32UD1xFCaZzfAMsJ24+2Z0t5WJPYM8zZesWBj6IxAfSrRUyUWqopfag37a
+ 5ezXlCJ1yJfWlTWWpCOZeCMld/yItFA01DLHByCelSTy2gHD1X/erx6ewlY14XVy
+ TJO3hiRrQBEJS94Ebltv7tgiw5A2eSvx0et3ZK2D/4D9X2OMKkGqpSSexEIe6VHt
+ DBl7Xl+KI2zRxp3Q9aCreGTAS6LSTjXsza/qQlHSGiBG2FrEcMtJxT3/7HvBIjCB
+ cWkoW59/dWsahEAIwfJktVJQ+SKwjVeBa7RJABEBAAG0HkJlbiBMZXBwa2UgPGJl
+ bkBiZW5sZXBwa2UuY29tPokBOQQTAQgAIwUCVW8UHAIbAwcLCQgHAwIBBhUIAgkK
+ CwQWAgMBAh4BAheAAAoJEBY/0bx7mJZG6XYH/3lABAKO+gabLoZ2srBwvlKpiQ85
+ PcmYCJ6LfEeG39uysXk6L2qwV5Q6ermcig9A+ag6IXWab0zZ7PD2Wuu05g1I3MPD
+ eGZWCp3bm2AYjLcXcF/ig2s8JcPUGww8j/c6y81Q9gGCaBKeDas7KkCja6xTlpWC
+ 2I7I9UgJvYIOBWfSn+w3B8Kae2M4MR3QIMXyHnCLOmJpf9pKwfPz/dzD8afVEY2j
+ v2WStd2YWQpXkn6Mp7WIFoWz0dVov6ejNmGthU4qGjduhNSAa3MJU5p1GFzFtrEK
+ EsfZxR3lox49wiM1Wvzd95RfODX3s/K1H4RjV+8xRYag0oDokSvspWsi1wC5AQ0E
+ VW8UHAEIAN7Asn3aeQqR8XcM03AlgzMQ7m7PXlKRqLzP0WrLXMI6g1epDXXkJ+JX
+ AhUNbCajP4ilgUonxMgTcpYJ/CgAn7uuu7oljnXTBR19PsF64ay/R0e6Jy+TYTG3
+ B69i9RLbDzcGwpTEqG7qigxXpbWXXgFVpQou1AkkeGiJPmmE5WJcPUpRIT6stP82
+ vhjIGlaEBQJQ53RhzCAsF/9XJrvjxXg5s+aJW6ZWIlEVWlH739UPeZWUzDHMIstA
+ +occ+TPkjR7AlnR8izz4zexLUqBexUiB89C1lpPzVk8Ldao9Linx3Vsc4v5lIjuS
+ w9zx96iytsDZby417f4YftGyGNPFJjMAEQEAAYkBHwQYAQgACQUCVW8UHAIbDAAK
+ CRAWP9G8e5iWRi+7CACfFQxv+xHCQ+r7JUAoqFvdGevt0yOTbVRx8VwbVVY0H7sR
+ sBLYcBnQb/8E8Ngkj4ANwPEJHjkVq45Kq3pHUo9qXijuhnGNhvGoMdFX6kAHhyEi
+ bYNIC7UlviJggbNqs/o+CRNuP4gW+dPUPJZ+3JEN1eP0DPDkX3kxka0do/ZDqBLT
+ DEoMe0rajuFiem7G24f7foZQyiTJfwPZFVI4YtcU96J6SC4X921JnCU8btzxl1Er
+ T2RTdls+BCqe3s1CRTavMvWbbRnDgI/teivYxMvTZwPb/NbnsS+i82JCkzTaJLU1
+ Ku6K5YDHgldI2lcaSqhtl/0fVnJP161WjnFf4XGp
+ =Pb2P
+ -----END PGP PUBLIC KEY BLOCK-----
+```

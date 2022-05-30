@@ -1,8 +1,8 @@
 ---
 title: About
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# Hi, I'm Ben Leppke
+I live in the Kansas City area and work at [Ad Astra](https://www.aais.com/) as a Senior System and Network Administrator. I've been working with technology in education and healthcare for over 17 years. Feel free to reach out say hello.
