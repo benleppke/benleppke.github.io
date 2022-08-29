@@ -31,8 +31,9 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
+# No longer included by default in Ruby 3.0
+gem "webrick"
 
 # Theme
-
 # gem "minima", "~> 2.5"
 # gem "beautiful-jekyll-theme", "5.0.0"

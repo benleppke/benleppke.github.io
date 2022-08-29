@@ -1,9 +1,8 @@
-
-body{
+body {
     margin: auto;
     color: #353535;
     background-color: #D9D9D9;
-    font: 400 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure{
@@ -14,38 +13,50 @@ body{
 
 /* Navbar */
 
-.navbar{
-    min-height: 56px;
+#header {
+    min-height: 80px;
+    background: #4D59B3;
+}
+
+.nav_container {
+    min-height: 80px;
+    max-width: 1080px;
+    padding: 10px;
+    margin: auto;
+}
+
+.navbar {
     color: white;
     background: #4D59B3;
+    overflow: hidden;
 }
 
 .navbar a,
 .navbar a:visited,
-.navbar a:hover{
+.navbar a:hover {
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .navbar a,
-.navbar a:visited{
+.navbar a:visited {
     color: white;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: black;
 }
 
-.navbar li{
+/* .navbar li {
     float: left;
-}
+} */
 
 .navbar ul {
     float: right;
     list-style-type: none;
 }
 
-.wrapper{
+.wrapper {
     background: white;
     max-width: 1080px;
     padding: 10px;
@@ -55,8 +66,8 @@ body{
 }
 
 .profile {
-    float:left;
-    padding:20px;
+    float: left;
+    padding: 20px;
 }
 
 /*
