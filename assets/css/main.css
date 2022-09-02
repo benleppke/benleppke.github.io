@@ -59,6 +59,7 @@ body {
 
 .wrapper {
     background: white;
+    min-height: 500px;
     max-width: 1080px;
     padding: 10px;
     margin: auto;
@@ -68,5 +69,7 @@ body {
 
 .profile {
     float: left;
+    max-width: 35%;
     padding: 20px;
+    border-radius: 50%;
 }
