@@ -4,10 +4,35 @@
     {% include head.html %}
   </head>
   <body>
+    <header id="header">
+      <div class="nav">
+        <div class="nav-left">
+          <a href="/">{{ site.title }}</a>
+        </div>
+        <div class="nav-right">
+          <a href="/statuspage">Statuspage</a>
+          <a href="/contact">Contact</a>
+          <a href="/about">About</a>
+          <a href="/projects">Projects</a>
+          <a href="/blog">Blog</a>
+        </div>
+      </div>
+    </header>
     <div class="wrapper">
       <img class="profile" src="{{ site.profile }}">
-      <h1 style="font-size: xxx-large;">{{ site.greeting }}</h1>
+      <h1>{{ site.greeting }}</h1>
       {{ content }}
     </div>
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://github.com/username" target="_blank">GitHub</a>
+          <a href="https://gitlab.com/username" target="_blank">GitLab</a>
+        </div>
+        <div class="copyright">
+          &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
