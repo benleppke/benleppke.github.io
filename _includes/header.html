@@ -39,20 +39,27 @@
         updateToggleIcons();
 
         themeToggle.addEventListener('click', () => {
-            // Cycle through themes: dark → light → system → dark
+            // Cycle through themes: dark → system → light
             if (currentTheme === 'dark') {
-                currentTheme = 'light';
-            } else if (currentTheme === 'light') {
                 currentTheme = 'system';
+            } else if (currentTheme === 'system') {
+                currentTheme = 'light';
             } else {
                 currentTheme = 'dark';
             }
             
-            // Apply theme
+            // Apply theme with animation
+            const html = document.documentElement;
+            console.log('Changing theme to:', currentTheme);
+            
             if (currentTheme === 'system') {
-                document.documentElement.removeAttribute('data-theme');
+                // Force reflow and apply system theme
+                html.offsetHeight;
+                html.removeAttribute('data-theme');
+                console.log('Applied system theme');
             } else {
-                document.documentElement.setAttribute('data-theme', currentTheme);
+                html.setAttribute('data-theme', currentTheme);
+                console.log('Applied theme:', currentTheme);
             }
             
             // Save preference and update UI
