@@ -241,7 +241,6 @@ body {
 
 [data-theme="light"] .toggle-thumb {
     transform: translateX(23px);
-}
 
 [data-theme="system"] .toggle-thumb {
     transform: translateX(12.5px);
