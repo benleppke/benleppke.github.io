@@ -11,8 +11,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  benleppke
 linkedin_username: benleppke
-twitter_username: benleppke
-facebook_username: benleppke
+# twitter_username: benleppke
+# facebook_username: benleppke
 
 # Build settings
 # theme: minima
