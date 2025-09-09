@@ -6,6 +6,12 @@ description: >-
 greeting: Hi, I'm Ben
 profile: /assets/img/ben.png
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
