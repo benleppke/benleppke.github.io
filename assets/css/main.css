@@ -105,17 +105,28 @@ body {
     color: #8C96FF;
 }
 
+.nav-left > a:hover {
+    color: #8C96FF;
+    text-shadow: 0 0 8px rgba(140, 150, 255, 0.5);
+}
+
 .nav a span {
     display: inline-block;
     padding: 8px 16px;
     border: 1px solid transparent;
     border-radius: 8px;
+    text-shadow: 0 0 8px rgba(140, 150, 255, 0.5);
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav a:hover span {
     border-color: #8C96FF;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-left > a:hover span {
+    border-color: transparent;
+    background-color: transparent;
 }
 
 .nav-toggle {
