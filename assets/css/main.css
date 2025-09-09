@@ -36,7 +36,27 @@ body {
 
 .footer-content {
     max-width: 1080px;
-    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #666;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* Navigation */
@@ -120,20 +140,21 @@ body {
     color: #8C96FF;
 }
 
-.social-links a {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 8px 16px;
-    color: #4D59B3;
-    font-size: 18px;
-    text-decoration: none;
-    border: 1px solid #4D59B3;
-    border-radius: 4px;
-    transition: color 0.3s ease;
+.social-icon {
+    color: #8C96FF;
+    transition: color 0.2s ease;
+    border: none !important;
+    padding: 0;
+    margin: 0 8px;
 }
 
-.social-links a:hover {
+.social-icon:hover {
     color: #D9D9D9;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .copyright {
