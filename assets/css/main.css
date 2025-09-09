@@ -291,6 +291,7 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     margin-top: 0.5rem;
+    border: 1px solid transparent;
 }
 
 .source-button:hover {
