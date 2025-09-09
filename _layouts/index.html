@@ -10,9 +10,10 @@
       </div>
       <h1>{{ site.greeting }}</h1>
       {{ content }}
-      <h4>Featured Projects</h4>
+      <h3>Featured Projects</h3>
       <div class="projects-grid">
-        {% for project in site.projects limit:3 %}
+        {% assign featured_projects = site.projects | where: "featured", true %}
+        {% for project in featured_projects limit:3 %}
           <div class="project-card">
             <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
             <p>{{ project.summary | markdownify }}</p>
