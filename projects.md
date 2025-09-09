@@ -9,6 +9,9 @@ permalink: /projects/
     <div class="project-card">
       <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
       <p>{{ project.content | markdownify }}</p>
+      {% if project.source %}
+        <a href="{{ project.source }}" class="source-button" target="_blank">Source</a>
+      {% endif %}
     </div>
   {% endfor %}
 </div>

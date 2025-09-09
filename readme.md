@@ -37,5 +37,7 @@ https://coolors.co/palette/353535-3c6e71-ffffff-d9d9d9-284b63
 #4D59B3
 #EF8354
 
+#8C96FF
+
 #353535
 #BFC0C0
