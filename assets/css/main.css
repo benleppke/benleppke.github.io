@@ -108,7 +108,7 @@ body {
 }
 
 .nav a:hover span {
-    border-color: #8C96FF;
+    /* border-color: #8C96FF; */
     background-color: rgba(255, 255, 255, 0.1);
 }
 
