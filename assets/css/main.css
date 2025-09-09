@@ -34,9 +34,8 @@ body {
 .nav a {
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 4px 8px;
     font-size: 18px;
-    transition: all 0.3s ease;
     text-decoration: none;
 }
 
@@ -47,8 +46,16 @@ body {
 
 .nav a:hover {
     color: #4D59B3;
+}
+.nav a span {
+    display: inline-block;
+    transition: all 0.4s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.nav a:hover span {
+    border: 1px solid #8C96FF;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
 }
 
 .nav-left,
@@ -71,6 +78,7 @@ body {
 .profile {
     float: left;
     max-width: 35%;
+    margin-right: 30px;
     border-radius: 50%;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
@@ -115,9 +123,9 @@ body {
 }
 
 .wrapper a:hover {
-    color: #BFC0C0;
+    color: #8C96FF;
 }
 
-.wrapper a:visited {
+/* .wrapper a:visited {
     color: #4D59B3;
-}
+} */
