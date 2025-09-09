@@ -163,12 +163,35 @@ body {
     color: #353535;
 }
 
-.profile {
-    float: left;
-    max-width: 35%;
-    margin-right: 30px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+.profile-container {
+  float: left;
+  max-width: 35%;
+  margin-right: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.profile-container:hover::after {
+  border-color: #8C96FF;
+}
+
+.profile-container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Media Queries */
