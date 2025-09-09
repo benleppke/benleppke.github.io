@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: projects
 title: Projects
 permalink: /projects/
 ---
+
+A collection of open-source projects and other things that I like to spend my time on.
 
 <div class="projects-grid">
   {% for project in site.projects %}

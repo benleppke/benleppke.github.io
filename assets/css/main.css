@@ -284,21 +284,21 @@ body {
     margin-bottom: 1rem;
 }
 
-.source-button {
+.project-card .source-button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: #353535;
-    color: #D9D9D9;
+    color: #D9D9D9 !important;
     border-radius: 12px;
     text-decoration: none;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* transition: all 0.15s ease; */
     margin-top: 0.5rem;
     border: 1px solid transparent;
 }
 
-.source-button::before {
+.project-card .source-button::before {
     content: "\f126";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -307,12 +307,14 @@ body {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    color: inherit !important;
 }
 
-.source-button:hover {
+.project-card .source-button:hover {
     border: 1px solid #8C96FF;
     border-radius: 12px;
     box-shadow: 0 0 5px #8C96FF;
+    color: #8C96FF !important;
 }
 
 @media (max-width: 768px) {
