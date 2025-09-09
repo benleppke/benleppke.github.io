@@ -76,7 +76,7 @@ body {
 
 .nav a {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 4px 4px;
     color: white;
     font-size: 18px;
     text-align: center;
@@ -101,7 +101,7 @@ body {
 
 .nav a span {
     display: inline-block;
-    padding: 6px 10px;
+    padding: 6px 14px;
     border: 1px solid transparent;
     border-radius: 12px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -181,6 +181,10 @@ body {
     .nav {
         flex-wrap: nowrap;
         justify-content: space-between;
+    }
+    
+    .nav-left a {
+        font-size: 24px;
     }
     
     .nav-right {
