@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border-radius: 16px;
 }
 
 .nav a {
