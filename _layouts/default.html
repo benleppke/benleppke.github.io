@@ -9,6 +9,9 @@
         <img class="profile-image" src="{{ site.profile }}">
       </div>
       <h1>{{ page.title }}</h1>
+      {% if page.summary %}
+        <p class="project-summary">{{ page.summary }}</p>
+      {% endif %}
       {{ content }}
     </div>
   </body>
