@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: Project 3
 permalink: /projects/project-3/
 ---

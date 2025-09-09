@@ -96,7 +96,7 @@ body {
 
 .nav-left > a:hover {
     color: #8C96FF;
-    text-shadow: 0 0 8px rgba(140, 150, 255, 0.5);
+    text-shadow: 0 0 12px #8C96FF;
 }
 
 .nav a span {

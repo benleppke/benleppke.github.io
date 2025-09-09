@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: Papirus Folder Icons
 permalink: /projects/papirus-folder-icons/
 source: https://gitlab.com/benleppke/papirus-folder-icons
