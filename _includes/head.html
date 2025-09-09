@@ -6,6 +6,7 @@
     <div class="nav-left">
         <a href="/"><span>{{ site.title }}</span></a>
     </div>
+    <div class="nav-toggle">☰</div>
     <div class="nav-right">
         <a href="/statuspage"><span>Statuspage</span></a>
         <a href="/contact"><span>Contact</span></a>
@@ -14,4 +15,9 @@
         <a href="/blog"><span>Blog</span></a>
     </div>
     </div>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-right').classList.toggle('active');
+        });
+    </script>
 </header>

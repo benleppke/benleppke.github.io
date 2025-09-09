@@ -42,6 +42,7 @@ body {
 .nav-left a {
     font-size: 20px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .nav a:hover {
@@ -62,14 +63,15 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .wrapper {
     color: #FFFFFF;
     min-height: 500px;
     max-width: 1080px;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 40px;
+    margin: 40px auto;
     border-radius: 8px;
     /* -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.2); */
@@ -107,6 +109,48 @@ body {
 
 .social-links a:hover {
     color: #D9D9D9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    
+    .nav-right {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-right a {
+        padding: 8px 0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .nav-right.active {
+        display: flex;
+        animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
 }
 
 .copyright {
