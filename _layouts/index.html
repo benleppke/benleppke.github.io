@@ -10,13 +10,18 @@
       </div>
       <h1>{{ site.greeting }}</h1>
       {{ content }}
-    </div>
-    <div class="wrapper">
-      <h1>{{ page.title }}</h1>
-      {% if page.summary %}
-        <p class="project-summary">{{ page.summary }}</p>
-      {% endif %}
-      {{ content }}
+      <h4>Featured Projects</h4>
+      <div class="projects-grid">
+        {% for project in site.projects limit:3 %}
+          <div class="project-card">
+            <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+            <p>{{ project.summary | markdownify }}</p>
+            {% if project.source %}
+              <a href="{{ project.source }}" class="source-button" target="_blank">Source</a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </body>
   {% include footer.html %}
