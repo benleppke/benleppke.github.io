@@ -441,29 +441,35 @@ body {
     }
 
     .nav-left a {
-        font-size: 24px;
+        font-size: 28px;
+    }
+
+    .nav a {
+        font-size: 22px;
     }
 
     .nav-right {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 10px;
         flex-direction: column;
         align-items: flex-end;
-        padding: 10px;
+        padding: 15px;
         background: var(--color-bg);
         border-radius: 0 0 8px 8px;
     }
 
     .nav-right a {
-        padding: 8px 16px;
+        padding: 12px 20px;
         text-align: right;
     }
 
     .nav-toggle {
         display: block;
         margin-left: 10px;
+        font-size: 28px;
+        padding: 8px 12px;
     }
 
     .theme-toggle-container {
