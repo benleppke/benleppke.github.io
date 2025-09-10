@@ -301,6 +301,19 @@ body {
 
 .profile-text {
     flex: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.profile-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+    text-shadow: 1px 1px 2px var(--color-shadow);
+}
+
+.profile-text p {
+    margin-bottom: 1rem;
 }
 
 .profile-container::after {
