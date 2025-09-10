@@ -285,13 +285,22 @@ body {
 }
 
 /* Profile Section */
+.profile-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
 .profile-container {
-    float: left;
+    flex: 0 0 35%;
     max-width: 35%;
-    margin-right: 30px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+}
+
+.profile-text {
+    flex: 1;
 }
 
 .profile-container::after {
