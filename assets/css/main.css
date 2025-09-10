@@ -414,6 +414,13 @@ body {
 
     .nav-toggle {
         display: block;
+        margin-left: 10px;
+    }
+
+    .theme-toggle-container {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
     }
 
     .projects-grid {
