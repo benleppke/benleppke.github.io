@@ -287,16 +287,29 @@ body {
 /* Profile Section */
 .profile-content {
     display: flex;
+    align-items: center;
     gap: 30px;
     margin-bottom: 40px;
 }
 
 .profile-container {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 auto;
+    width: 35vmin;
+    height: 35vmin;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+}
+
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .profile-text {
@@ -332,8 +345,9 @@ body {
 
 .profile-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 /* Projects Grid */
