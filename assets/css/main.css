@@ -235,11 +235,18 @@ body {
 
 @media (max-width: 768px) {
     .theme-toggle {
-        padding: 6px;
+        width: 44px;
+        height: 44px;
+        padding: 8px;
     }
     
     .theme-toggle i {
-        font-size: 14px;
+        font-size: 28px;
+    }
+    
+    .theme-toggle-container {
+        margin-left: 0;
+        order: 2;
     }
 }
 
