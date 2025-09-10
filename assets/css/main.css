@@ -19,11 +19,12 @@
     --color-text: #333333;
     --color-text-light: #000000;
     --color-accent: #D48560;
-    --color-card-bg: #F6F0DF;
-    --color-card-border: #DED4B2;
-    --color-card-hover: #F4ECD7;
+    --color-card-bg: #f8f5ed;
+    --color-card-border: #dfdcd2;
+    --color-card-hover: #fcf8ee;
     --color-button-bg: #D9D9D9;
     --color-button-text: #333333;
+    --color-button-hover: #8C96FF;
     --color-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -215,10 +216,10 @@ body {
 
 [data-theme="dark"] .theme-toggle .fa-moon,
 [data-theme="light"] .theme-toggle .fa-sun,
-[data-theme="system"] .theme-toggle .fa-adjust,
-:not([data-theme]) .theme-toggle .fa-adjust {
-    display: inline-block;
-}
+[data-theme="auto"] .theme-toggle .fa-adjust,
+    :not([data-theme]) .theme-toggle .fa-adjust {
+        display: inline-block;
+    }
 
 @media (max-width: 768px) {
     .theme-toggle {
@@ -231,7 +232,8 @@ body {
 }
 
 .nav a:hover span {
-    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-card-border);
+    background-color: var(--color-card-border);
 }
 
 .nav-left > a:hover span {
