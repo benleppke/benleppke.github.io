@@ -288,7 +288,7 @@ body {
 .profile-content {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: clamp(15px, 3vw, 30px);
     margin-bottom: 40px;
 }
 
