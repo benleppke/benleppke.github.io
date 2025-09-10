@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    {% include header.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="profile-container">
+        <img class="profile-image" src="{{ site.profile }}">
+      </div>
+      <h1 class="home-title">{{ site.greeting }}</h1>
+      {{ content }}
+      <h3>Featured Projects</h3>
+      <div class="projects-grid">
+        {% assign featured_projects = site.projects | where: "featured", true %}
+        {% for project in featured_projects limit:3 %}
+          <div class="project-card">
+            <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+            <p>{{ project.summary | markdownify }}</p>
+            {% if project.source %}
+              <a href="{{ project.source }}" class="source-button" target="_blank">Source</a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+  {% include footer.html %}
+</html>
