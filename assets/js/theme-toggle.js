@@ -14,10 +14,10 @@ document.documentElement.setAttribute('data-theme', currentTheme);
 updateToggleIcons();
 
 themeToggle.addEventListener('click', () => {
-    // Cycle through themes: dark → system → light
+    // Cycle through themes: dark → auto → light
     if (currentTheme === 'dark') {
-        currentTheme = 'system';
-    } else if (currentTheme === 'system') {
+        currentTheme = 'auto';
+    } else if (currentTheme === 'auto') {
         currentTheme = 'light';
     } else {
         currentTheme = 'dark';
@@ -27,11 +27,11 @@ themeToggle.addEventListener('click', () => {
     const html = document.documentElement;
     console.log('Changing theme to:', currentTheme);
     
-    if (currentTheme === 'system') {
-        // Force reflow and apply system theme
+    if (currentTheme === 'auto') {
+        // Force reflow and apply auto theme
         html.offsetHeight;
         html.removeAttribute('data-theme');
-        console.log('Applied system theme');
+        console.log('Applied auto theme');
     } else {
         html.setAttribute('data-theme', currentTheme);
         console.log('Applied theme:', currentTheme);
@@ -59,9 +59,9 @@ function updateToggleIcons() {
     }
 }
 
-// Watch for system theme changes
+// Watch for auto theme changes
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (currentTheme === 'system') {
+    if (currentTheme === 'auto') {
         document.documentElement.removeAttribute('data-theme');
     }
 });
