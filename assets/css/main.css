@@ -15,13 +15,14 @@
 
     /* Light theme */
 [data-theme="light"] {
-    --color-bg: #F5F5F5;
+    --color-bg: #FDF9EE;
     --color-text: #333333;
     --color-text-light: #000000;
-    --color-card-bg: #FFFFFF;
-    --color-card-border: #E0E0E0;
-    --color-card-hover: #F0F0F0;
-    --color-button-bg: #E0E0E0;
+    --color-accent: #D48560;
+    --color-card-bg: #F6F0DF;
+    --color-card-border: #DED4B2;
+    --color-card-hover: #F4ECD7;
+    --color-button-bg: #D9D9D9;
     --color-button-text: #333333;
     --color-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -316,28 +317,28 @@ body {
 }
 
 .project-card {
-    background: #222;
+    background: var(--color-card-bg);
     border-radius: 8px;
     padding: 1.5rem;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    border: 1px solid #353535;
+    border: 1px solid var(--color-card-border);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid #4E4E4E;
-    background: #2A2A2A;
+    box-shadow: 0 10px 20px var(--color-shadow);
+    border: 1px solid var(--color-card-hover);
+    background: var(--color-card-hover);
 }
 
 .project-card h3 {
-    color: #8C96FF;
+    color: var(--color-accent);
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
 .project-card p {
-    color: #D9D9D9;
+    color: var(--color-text);
     margin-bottom: 1rem;
 }
 
@@ -346,8 +347,8 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #353535;
-    color: #D9D9D9 !important;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text) !important;
     border-radius: 12px;
     text-decoration: none;
     margin-top: 0.5rem;
@@ -367,10 +368,10 @@ body {
 }
 
 .project-card .source-button:hover {
-    border: 1px solid #8C96FF;
+    border: 1px solid var(--color-accent);
     border-radius: 12px;
-    box-shadow: 0 0 5px #8C96FF;
-    color: #8C96FF !important;
+    box-shadow: 0 0 5px var(--color-accent);
+    color: var(--color-accent) !important;
 }
 
 
