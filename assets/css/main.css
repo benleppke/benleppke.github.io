@@ -285,13 +285,33 @@ body {
 }
 
 /* Profile Section */
+.profile-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
 .profile-container {
-    float: left;
+    flex: 0 0 35%;
     max-width: 35%;
-    margin-right: 30px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+}
+
+.profile-text {
+    flex: 1;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.profile-text h1 {
+    letter-spacing: -0.5px;
+    text-shadow: 1px 1px 2px var(--color-shadow);
+}
+
+.profile-text p {
+    margin-bottom: 1rem;
 }
 
 .profile-container::after {
