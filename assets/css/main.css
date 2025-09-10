@@ -307,8 +307,8 @@ body {
 
 .profile-container {
     flex: 0 0 auto;
-    width: 35vmin;
-    height: 35vmin;
+    width: 25vw;
+    height: 25vw;
     min-width: 150px;
     min-height: 150px;
     max-width: 300px;
