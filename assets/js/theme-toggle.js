@@ -65,3 +65,15 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
         document.documentElement.removeAttribute('data-theme');
     }
 });
+
+// Add ripple effect handling
+document.querySelectorAll('.theme-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+        this.classList.add('ripple');
+        
+        // Remove class after animation completes
+        this.addEventListener('animationend', () => {
+            this.classList.remove('ripple');
+        }, {once: true});
+    });
+});
