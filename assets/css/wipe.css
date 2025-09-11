@@ -1,5 +1,4 @@
-/* Title Animation Styles */
-.home-title {
+.wipe {
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -8,7 +7,7 @@
     font-weight: bold;
 }
 
-.home-title::after {
+.wipe::after {
     content: '';
     position: absolute;
     top: 0;
@@ -20,7 +19,7 @@
     transform: translateX(-101%);
 }
 
-.home-title::before {
+.wipe::before {
     content: '';
     position: absolute;
     top: 0;
@@ -32,13 +31,13 @@
     transform: translateX(0);
 }
 
-.home-title span:nth-of-type(1)::before,
-.home-title span:nth-of-type(1)::after {
+.wipe span:nth-of-type(1)::before,
+.wipe span:nth-of-type(1)::after {
     animation-delay: 1s;
 }
 
-.home-title span:nth-of-type(2)::before,
-.home-title span:nth-of-type(2)::after {
+.wipe span:nth-of-type(2)::before,
+.wipe span:nth-of-type(2)::after {
     animation-delay: 1.5s;
 }
 
