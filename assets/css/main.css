@@ -525,6 +525,19 @@ body {
  * ----------------------------------------
  */
 
+/* Image Loading Animation */
+
+img {
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+img.loaded {
+    opacity: 1;
+    filter: blur(0);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -560,10 +573,13 @@ body {
     pointer-events: none;
 }
 
+/* Shine Effect */
+
 .shine {
 	position: relative;
 	overflow: hidden;
 }
+
 .shine::before {
 	position: absolute;
 	top: 0;
@@ -578,15 +594,18 @@ body {
 	-webkit-transform: skewX(-25deg);
 	transform: skewX(-25deg);
 }
+
 .shine:hover::before {
 	-webkit-animation: shine .75s;
 	animation: shine .75s;
 }
+
 @-webkit-keyframes shine {
 	100% {
 		left: 125%;
 	}
 }
+
 @keyframes shine {
 	100% {
 		left: 125%;
