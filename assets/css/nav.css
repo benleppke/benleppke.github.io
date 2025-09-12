@@ -1,14 +1,206 @@
+/* Navbar Container */
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    min-height: 60px;
+    max-width: 1080px;
+    border-radius: 16px;
+    transition: background-color 0.5s ease;
+}
+
+/* Navbar Left Side (Title) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+}
+
+.nav-left a {
+    display: inline-block;
+    padding: 4px;
+    color: var(--color-text-light);
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-left a:hover {
+    color: var(--color-accent);
+}
+
+.nav-left > a:hover span {
+    border-color: transparent;
+    background-color: transparent;
+}
+
 .title-hover {
-  padding-block: 0.05em;
-  background:
-    linear-gradient(var(--color-accent) 50%,var(--color-accent) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-    linear-gradient(var(--color-accent) 0 0) 0% var(--_p,0%)/var(--_p,0%) 0.05em no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+    padding-block: 0.05em;
+    background:
+        linear-gradient(var(--color-accent) 50%,var(--color-accent) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+        linear-gradient(var(--color-accent) 0 0) 0% var(--_p,0%)/var(--_p,0%) 0.05em no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
 }
 
 .title-hover:hover {
-  --_p: 100%;
-  --_s: .3s;
+    --_p: 100%;
+    --_s: .3s;
+}
+
+/* Navbar Right Side (Menu) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    transition: all 0.3s ease;
+    gap: 0.5rem;
+}
+
+.nav-right a {
+    display: inline-block;
+    padding: 4px;
+    color: var(--color-text-light);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-right a:hover {
+    color: var(--color-accent);
+}
+
+.nav-right a span {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-right a:hover span {
+    border-color: var(--color-card-border);
+    background-color: var(--color-card-bg);
+}
+
+.nav-right.active {
+    display: flex;
+}
+
+/* Theme Toggle */
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.theme-toggle i {
+    font-size: 16px;
+    color: var(--color-text);
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.theme-toggle:hover i {
+    color: var(--color-accent);
+    text-shadow: 0 0 8px rgba(140, 150, 255, 0.5);
+}
+
+.theme-toggle i:not(.active) {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon,
+[data-theme="light"] .theme-toggle .fa-sun,
+[data-theme="auto"] .theme-toggle .fa-adjust,
+    :not([data-theme]) .theme-toggle .fa-adjust {
+        display: inline-block;
+    }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .nav-left a {
+        font-size: 28px;
+    }
+
+    .nav a {
+        font-size: 22px;
+    }
+
+    .nav-right {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+        background: var(--color-bg);
+        border-radius: 0 0 8px 8px;
+    }
+
+    .nav-right a {
+        padding: 12px 20px;
+        text-align: right;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: 10px;
+        font-size: 28px;
+        padding: 8px 12px;
+    }
+
+    .theme-toggle {
+        width: 44px;
+        height: 44px;
+        padding: 8px;
+    }
+    
+    .theme-toggle i {
+        font-size: 28px;
+    }
+    
+    .theme-toggle-container {
+        margin-left: 0;
+        order: 2;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .theme-toggle {
+        position: relative;
+        z-index: 1;
+    }
 }
