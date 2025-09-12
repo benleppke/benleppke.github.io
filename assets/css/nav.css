@@ -123,8 +123,8 @@
 }
 
 .theme-toggle:hover i {
-    color: var(--color-accent);
-    text-shadow: 0 0 8px rgba(140, 150, 255, 0.5);
+    color: var(--color-accent-inverse);
+    text-shadow: 0 0 8px var(--color-accent-inverse);
 }
 
 .theme-toggle i:not(.active) {
