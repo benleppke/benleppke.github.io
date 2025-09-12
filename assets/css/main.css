@@ -6,7 +6,7 @@
     --color-text: #D9D9D9;
     --color-text-light: #FFFFFF;
     --color-accent: #8C96FF;
-    --color-card-bg: #222;
+    --color-card-bg: #222222;
     --color-card-border: #353535;
     --color-card-hover: #2A2A2A;
     --color-button-bg: #353535;
@@ -161,7 +161,7 @@ body {
     display: flex;
 }
 
-.nav a {
+.nav-right a {
     display: inline-block;
     padding: 4px;
     color: var(--color-text-light);
@@ -169,19 +169,25 @@ body {
     text-align: center;
     text-decoration: none;
     transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .nav-left a {
+    display: inline-block;
+    padding: 4px;
+    color: var(--color-text-light);
     font-size: 20px;
     font-weight: bold;
     white-space: nowrap;
+    text-decoration: none;
 }
 
-.nav a:hover {
+.nav-right a:hover {
     color: var(--color-accent);
 }
 
-.nav-left > a:hover {
+.nav-left a:hover {
     color: var(--color-accent);
     text-shadow: 0 0 12px var(--color-accent);
 }
@@ -257,9 +263,9 @@ body {
     }
 }
 
-.nav a:hover span {
+.nav-right a:hover span {
     border-color: var(--color-card-border);
-    background-color: var(--color-card-border);
+    background-color: var(--color-card-bg);
 }
 
 .nav-left > a:hover span {
