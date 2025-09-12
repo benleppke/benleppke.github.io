@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:slnt,wght@0,100..1000&display=swap');
+
 :root {
     /* Dark theme (default) */
     --color-bg: #181818;
@@ -46,7 +48,8 @@ body {
     padding: 0;
     color: var(--color-text);
     background-color: var(--color-bg);
-    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 /*
@@ -63,6 +66,7 @@ body {
     padding: 40px 20px;
     color: var(--color-text-light);
     border-radius: 8px;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .wrapper::after {
@@ -77,6 +81,7 @@ body {
     z-index: 100;
     min-height: 60px;
     background: var(--color-bg);
+    transition: background-color 0.5s ease;
 }
 
 @media (max-width: 768px) {
@@ -127,6 +132,7 @@ body {
     min-height: 60px;
     max-width: 1080px;
     border-radius: 16px;
+    transition: background-color 0.5s ease;
 }
 
 .nav-left {
@@ -205,6 +211,7 @@ body {
     height: 40px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .theme-toggle i {
@@ -518,6 +525,19 @@ body {
  * ----------------------------------------
  */
 
+/* Image Loading Animation */
+
+img {
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+img.loaded {
+    opacity: 1;
+    filter: blur(0);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -527,4 +547,67 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+.theme-toggle.ripple:before {
+    content: '';
+    position: absolute;
+    border: var(--color-accent) solid 4px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: ripple-out 0.6s forwards;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+/* Shine Effect */
+
+.shine {
+	position: relative;
+	overflow: hidden;
+}
+
+.shine::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.shine:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
 }
