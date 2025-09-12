@@ -290,7 +290,8 @@ body {
 .project-card .source-button:hover {
     border: 1px solid var(--color-accent);
     border-radius: 12px;
-    box-shadow: 0 0 5px var(--color-accent);
+    text-decoration: none;
+    /* box-shadow: 0 0 5px var(--color-accent); */
     color: var(--color-accent) !important;
 }
 
