@@ -173,6 +173,10 @@ body {
     overflow: hidden;
 }
 
+.nav-right a:hover {
+    color: var(--color-accent);
+}
+
 .nav-left a {
     display: inline-block;
     padding: 4px;
@@ -183,13 +187,8 @@ body {
     text-decoration: none;
 }
 
-.nav-right a:hover {
-    color: var(--color-accent);
-}
-
 .nav-left a:hover {
     color: var(--color-accent);
-    text-shadow: 0 0 12px var(--color-accent);
 }
 
 .nav a span {
