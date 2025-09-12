@@ -17,13 +17,14 @@
     align-items: center;
     flex-grow: 1;
     transition: all 0.3s ease;
+    padding-left: 1em;
 }
 
 .nav-left a {
     display: inline-block;
     padding: 4px;
     color: var(--color-text-light);
-    font-size: 20px;
+    font-size: .8em;
     font-weight: bold;
     white-space: nowrap;
     text-decoration: none;
