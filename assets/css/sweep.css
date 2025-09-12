@@ -1,10 +1,10 @@
-.wipe {
+.sweep {
     position: relative;
     overflow: hidden;
     display: inline-block;
 }
 
-.wipe::after {
+.sweep::after {
     content: '';
     position: absolute;
     top: 0;
@@ -17,7 +17,7 @@
     animation-delay: .05s;
 }
 
-.wipe::before {
+.sweep::before {
     content: '';
     position: absolute;
     top: 0;
