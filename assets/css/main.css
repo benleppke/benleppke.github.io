@@ -9,6 +9,7 @@
     --color-card-bg: #222222;
     --color-card-border: #353535;
     --color-card-bg-hover: #2A2A2A;
+    --color-card-border-hover: #3d3d3d;
     --color-button-bg: #353535;
     --color-button-text: var(--color-text);
     --color-shadow: rgba(0, 0, 0, 0.3);
@@ -19,10 +20,11 @@
     --color-bg: #FDF9EE;
     --color-text: #333333;
     --color-text-light: #000000;
-    --color-accent: #D48560;
+    --color-accent: #F89A20;
     --color-card-bg: #F8F5ED;
     --color-card-border: #DFDCD2;
-    --color-card-bg-hover: #FCF8EE;
+    --color-card-bg-hover: #F6F0DF;
+    --color-card-border-hover: #d3d0c6;
     --color-button-bg: #D9D9D9;
     --color-button-text: var(--color-text);
     --color-shadow: rgba(0, 0, 0, 0.1);
@@ -245,7 +247,7 @@ body {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px var(--color-shadow);
-    border: 1px solid var(--color-card-bg-hover);
+    border: 1px solid var(--color-card-border-hover);
     background: var(--color-card-bg-hover);
 }
 
