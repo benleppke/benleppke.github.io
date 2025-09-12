@@ -236,7 +236,7 @@ body {
     clear: both;
 }
 
-.project-card {
+.card {
     background: var(--color-card-bg);
     border-radius: 8px;
     padding: 1.5rem;
@@ -244,25 +244,25 @@ body {
     border: 1px solid var(--color-card-border);
 }
 
-.project-card:hover {
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px var(--color-shadow);
     border: 1px solid var(--color-card-hover);
     background: var(--color-card-hover);
 }
 
-.project-card h3 {
+.card h3 {
     color: var(--color-accent);
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
-.project-card p {
+.card p {
     color: var(--color-text);
     margin-bottom: 1rem;
 }
 
-.project-card .source-button {
+.card .source-button {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -275,7 +275,7 @@ body {
     border: 1px solid transparent;
 }
 
-.project-card .source-button::before {
+.card .source-button::before {
     content: "\f126";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -287,7 +287,7 @@ body {
     color: inherit !important;
 }
 
-.project-card .source-button:hover {
+.card .source-button:hover {
     border: 1px solid var(--color-accent);
     border-radius: 12px;
     text-decoration: none;

@@ -8,7 +8,7 @@ A collection of open-source projects and other things that I like to spend my ti
 
 <div class="projects-grid">
   {% for project in site.projects %}
-    <div class="project-card">
+    <div class="card">
       <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
       <p>{{ project.summary | markdownify }}</p>
       {% if project.source %}
