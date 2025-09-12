@@ -1,10 +1,10 @@
-.wipe {
+.sweep {
     position: relative;
     overflow: hidden;
     display: inline-block;
 }
 
-.wipe::after {
+.sweep::after {
     content: '';
     position: absolute;
     top: 0;
@@ -14,10 +14,10 @@
     background: var(--color-accent);
     animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
     transform: translateX(-101%);
-    animation-delay: 1s;
+    animation-delay: .05s;
 }
 
-.wipe::before {
+.sweep::before {
     content: '';
     position: absolute;
     top: 0;
@@ -27,7 +27,7 @@
     background: var(--color-bg);
     animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
     transform: translateX(0);
-    animation-delay: 1s;
+    animation-delay: .05s;
 }
 
 @keyframes a-ltr-after {

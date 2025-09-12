@@ -10,7 +10,7 @@
           <img class="profile-image" src="{{ site.profile }}">
         </div>
         <div class="profile-text">
-          <h1 class="wipe">{{ site.greeting }}</h1>
+          <h1 class="sweep">{{ site.greeting }}</h1>
           {{ content }}
         </div>
       </div>
@@ -18,7 +18,7 @@
       <div class="projects-grid">
         {% assign featured_projects = site.projects | where: "featured", true %}
         {% for project in featured_projects limit:3 %}
-          <div class="project-card">
+          <div class="card">
             <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
             <p>{{ project.summary | markdownify }}</p>
             {% if project.source %}
