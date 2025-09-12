@@ -130,11 +130,11 @@ body {
 .wrapper a {
     color: var(--color-accent);
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .wrapper a:hover {
     color: var(--color-accent);
+    text-decoration: underline;
 }
 
 /* Social Icons */
