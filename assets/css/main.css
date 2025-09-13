@@ -163,7 +163,7 @@ body {
     display: flex;
     align-items: center;
     gap: clamp(15px, 3vw, 30px);
-    margin-bottom: 40px;
+    margin-bottom: 1.5em;
 }
 
 @media (max-width: 768px) {
