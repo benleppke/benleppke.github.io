@@ -5,11 +5,14 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="profile-container">
-        <img class="profile-image" src="{{ site.profile }}">
+      <div class="profile-content">
+        <div class="profile-text">
+          {{ content }}
+        </div>
+        <div class="profile-container shine">
+          <img class="profile-image" src="/assets/img/about/ben-photo.png">
+        </div>
       </div>
-      <h1>{{ site.greeting }}</h1>
-      {{ content }}
     </div>
   </body>
   {% include footer.html %}

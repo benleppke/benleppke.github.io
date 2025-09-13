@@ -64,8 +64,8 @@ body {
     display: block;
     max-width: 1080px;
     min-height: 500px;
-    margin: 40px auto;
-    padding: 40px 20px;
+    margin: 0 auto 1.8em;
+    padding: 1.8em 20px;
     color: var(--color-text-light);
     border-radius: 8px;
     transition: color 0.5s ease, background-color 0.5s ease;
@@ -163,13 +163,27 @@ body {
     display: flex;
     align-items: center;
     gap: clamp(15px, 3vw, 30px);
-    margin-bottom: 40px;
+    margin-bottom: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .profile-container {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
 
 .profile-container {
     flex: 0 0 auto;
-    width: 25vw;
-    height: 25vw;
+    width: 55vw;
+    height: 55vw;
     min-width: 150px;
     min-height: 150px;
     max-width: 300px;
@@ -195,10 +209,13 @@ body {
 .profile-text h1 {
     letter-spacing: -0.5px;
     text-shadow: 1px 1px 2px var(--color-shadow);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .profile-text p {
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .profile-container::after {
@@ -229,7 +246,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    margin: 3rem 0 2rem;
+    margin: 2rem 0 2rem;
     clear: both;
 }
 
@@ -305,7 +322,7 @@ body {
 
 @media (max-width: 768px) {
     .wrapper {
-        margin: 20px auto;
+        margin: 0 auto 20px;
         padding: 20px;
     }
 
