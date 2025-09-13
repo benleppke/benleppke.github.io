@@ -5,6 +5,7 @@ navToggle.addEventListener('click', function() {
     if (navRight.style.display === 'none' || navRight.style.display === '') {
         // When opening - show immediately then trigger animation
         navRight.style.display = 'flex';
+        navRight.style.pointerEvents = 'auto';
         // Small delay to allow display change to take effect
         setTimeout(() => {
             navRight.style.opacity = '1';
@@ -14,6 +15,7 @@ navToggle.addEventListener('click', function() {
         // When closing - animate out then hide
         navRight.style.opacity = '0';
         navRight.style.transform = 'translateY(-10px)';
+        navRight.style.pointerEvents = 'none';
         navRight.addEventListener('transitionend', function handler() {
             navRight.style.display = 'none';
             navRight.removeEventListener('transitionend', handler);
