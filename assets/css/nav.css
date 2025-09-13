@@ -217,6 +217,10 @@
     
     .theme-toggle-container {
         margin-left: 0;
+        order: 1;
+    }
+    
+    .nav-toggle {
         order: 2;
     }
 }
