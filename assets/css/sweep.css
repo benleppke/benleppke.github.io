@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     display: inline-block;
+    margin: .2em 0
 }
 
 .sweep::after {
