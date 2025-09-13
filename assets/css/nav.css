@@ -184,6 +184,16 @@
         padding: 15px;
         background: var(--color-bg);
         border-radius: 0 0 8px 8px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+    }
+
+    .nav-right.visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     .nav-right a {

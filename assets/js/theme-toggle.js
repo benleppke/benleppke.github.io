@@ -2,7 +2,23 @@ const navToggle = document.querySelector('.nav-toggle');
 const navRight = document.querySelector('.nav-right');
 
 navToggle.addEventListener('click', function() {
-    navRight.classList.toggle('active');
+    if (navRight.style.display === 'none' || navRight.style.display === '') {
+        // When opening - show immediately then trigger animation
+        navRight.style.display = 'flex';
+        // Small delay to allow display change to take effect
+        setTimeout(() => {
+            navRight.style.opacity = '1';
+            navRight.style.transform = 'translateY(0)';
+        }, 10);
+    } else {
+        // When closing - animate out then hide
+        navRight.style.opacity = '0';
+        navRight.style.transform = 'translateY(-10px)';
+        navRight.addEventListener('transitionend', function handler() {
+            navRight.style.display = 'none';
+            navRight.removeEventListener('transitionend', handler);
+        }, { once: true });
+    }
 });
 
 const themeToggle = document.querySelector('.theme-toggle');
