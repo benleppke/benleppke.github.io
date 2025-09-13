@@ -20,6 +20,11 @@
     padding-left: 1em;
 }
 
+.nav-left h1 {
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
 .nav-left a {
     display: inline-block;
     padding: 4px;
