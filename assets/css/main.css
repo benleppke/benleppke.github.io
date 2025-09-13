@@ -195,10 +195,13 @@ body {
 .profile-text h1 {
     letter-spacing: -0.5px;
     text-shadow: 1px 1px 2px var(--color-shadow);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .profile-text p {
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 .profile-container::after {
