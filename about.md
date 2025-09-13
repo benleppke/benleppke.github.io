@@ -3,4 +3,4 @@ layout: about
 title: Ben Leppke
 ---
 
-I’m a System and Network Administrator living in the Kansas City area. I work at [Ad Astra](https://www.aais.com/) which means I’ve been working with computer systems in education and healthcare for over 20 years! I’m always interested to hear about new opportunities, feel free to reach out and say hello!
+Hey, I'm Ben! I like to build things using technology and art. I work as a System and Network Administrator in the Kansas City area managing modern (and not-so-modern) systems at scale. I have a badass wife and a gremlin dog. I do some programming and 3d design, I run tabletop games, I play video games and make cool stuff.
