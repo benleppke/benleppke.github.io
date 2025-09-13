@@ -102,14 +102,4 @@ function updateToggleIcons() {
     }
 }
 
-// Handle window resize to reset menu if needed
-window.addEventListener('resize', function() {
-    const navRight = document.querySelector('.nav-right');
-    // Check if window is desktop size (768px matches common breakpoint)
-    if (window.innerWidth >= 768) {
-        navRight.style.display = 'flex';
-        navRight.style.opacity = '1';
-        navRight.style.transform = 'translateY(0)';
-        navRight.style.pointerEvents = 'auto';
-    }
-});
+// Remove window resize handler for menu - let CSS media queries handle visibility
