@@ -166,6 +166,20 @@ body {
     margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .profile-container {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
 .profile-container {
     flex: 0 0 auto;
     width: 25vw;
