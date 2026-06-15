@@ -24,6 +24,7 @@ linkedin_username: benleppke
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
   - README.md

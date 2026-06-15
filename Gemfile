@@ -10,7 +10,8 @@ gem "jekyll-theme-primer"
 # gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.16" # Update this to a more recent version
+  gem "jekyll-feed", "~> 0.16"
+  gem "jekyll-sitemap"
 end
 
 # Keep these platform-specific gems if you're on these platforms
