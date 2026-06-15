@@ -50,7 +50,7 @@ body {
     padding: 0;
     color: var(--color-text);
     background-color: var(--color-bg);
-    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Roboto Flex", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 

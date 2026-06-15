@@ -153,11 +153,9 @@
 }
 
 [data-theme="dark"] .theme-toggle .fa-moon,
-[data-theme="light"] .theme-toggle .fa-sun,
-[data-theme="auto"] .theme-toggle .fa-adjust,
-    :not([data-theme]) .theme-toggle .fa-adjust {
-        display: inline-block;
-    }
+[data-theme="light"] .theme-toggle .fa-sun {
+    display: inline-block;
+}
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
