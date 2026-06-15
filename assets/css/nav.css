@@ -98,10 +98,6 @@
     background-color: var(--color-card-bg);
 }
 
-.nav-right.active {
-    display: flex;
-}
-
 /* Theme Toggle */
 .theme-toggle-container {
     display: flex;
@@ -132,10 +128,6 @@
 .theme-toggle:hover i {
     color: var(--color-accent-inverse);
     text-shadow: 0 0 8px var(--color-accent-inverse);
-}
-
-.theme-toggle i:not(.active) {
-    display: none;
 }
 
 .theme-toggle.ripple:before {
@@ -187,7 +179,11 @@
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
-    .nav-right.visible {
+    .nav-right.open {
+        display: flex;
+    }
+
+    .nav-right.open.visible {
         opacity: 1;
         transform: translateY(0);
     }
