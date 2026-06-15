@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projects
 title: Keeper Flatpak
 permalink: /projects/keeper-flatpak/
 source: https://gitlab.com/benleppke/keeper
