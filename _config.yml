@@ -13,7 +13,7 @@ collections:
     permalink: /projects/:path/
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://benleppke.com"
 
 github_username:  benleppke
 linkedin_username: benleppke
@@ -24,9 +24,10 @@ linkedin_username: benleppke
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
-  - readme.md
+  - README.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

@@ -16,7 +16,38 @@
     --color-shadow: rgba(0, 0, 0, 0.3);
 }
 
-    /* Light theme */
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-bg: #FDF9EE;
+        --color-text: #333333;
+        --color-text-light: #000000;
+        --color-accent: #F89A20;
+        --color-accent-inverse: #8C96FF;
+        --color-card-bg: #F8F5ED;
+        --color-card-border: #DFDCD2;
+        --color-card-bg-hover: #F6F0DF;
+        --color-card-border-hover: #d3d0c6;
+        --color-button-bg: #D9D9D9;
+        --color-button-text: var(--color-text);
+        --color-shadow: rgba(0, 0, 0, 0.1);
+    }
+}
+
+[data-theme="dark"] {
+    --color-bg: #181818;
+    --color-text: #D9D9D9;
+    --color-text-light: #FFFFFF;
+    --color-accent: #8C96FF;
+    --color-accent-inverse: #F89A20;
+    --color-card-bg: #222222;
+    --color-card-border: #353535;
+    --color-card-bg-hover: #2A2A2A;
+    --color-card-border-hover: #3d3d3d;
+    --color-button-bg: #353535;
+    --color-button-text: var(--color-text);
+    --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
 [data-theme="light"] {
     --color-bg: #FDF9EE;
     --color-text: #333333;
@@ -30,6 +61,29 @@
     --color-button-bg: #D9D9D9;
     --color-button-text: var(--color-text);
     --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * ----------------------------------------
+ * Skip-to-content Link
+ * ----------------------------------------
+ */
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: var(--color-bg);
 }
 
 /*
@@ -50,7 +104,7 @@ body {
     padding: 0;
     color: var(--color-text);
     background-color: var(--color-bg);
-    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Roboto Flex", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 

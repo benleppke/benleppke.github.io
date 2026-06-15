@@ -1,16 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    {% include header.html %}
+    {% include head.html %}
   </head>
   <body>
-    <div class="wrapper">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    {% include header.html %}
+    <div class="wrapper" id="main-content">
       <div class="profile-content">
         <div class="profile-text">
           {{ content }}
         </div>
         <div class="profile-container shine">
-          <img class="profile-image" src="/assets/img/about/ben-photo.png">
+          <img class="profile-image" src="{{ site.profile }}">
         </div>
       </div>
     </div>

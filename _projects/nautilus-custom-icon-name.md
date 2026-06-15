@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projects
 title: Nautilus Custom Icon Name
 permalink: /projects/nautilus-custom-icon-name/
 source: https://gitlab.com/benleppke/nautilus-custom-icon-name
