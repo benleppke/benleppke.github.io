@@ -13,7 +13,7 @@ That had been working pretty well for me when I wanted to give a folder a unique
 
 But then I started using the [GNOME Accent Icon](https://github.com/taiwbi/gnome-accent-directories) extension which lets you sync the folder icon color to the GNOME Accent color. It's lovely and feels like a native feature of the desktop environment but this meant I was going to have to remake all of my icons anytime I wanted to change colors.
 
-No problem I'll just write a python script to make each icon in each Gnome accent color. In fact now that I'm automating it maybe I'll go ahead and make a few extras... Well I got a bit carried away and soon I had [my own icon pack add-on with over 150,000 new custom icons](/projects/nautilus-custom-icon-name/).
+No problem I'll just write a python script to make each icon in each Gnome accent color. In fact now that I'm automating it maybe I'll go ahead and make a few extras... Well I got a bit carried away and soon I had [my own icon pack add-on with over 150,000 new custom icons](/projects/papirus-folder-icons/).
 
 Now I had all the icons I needed but I still had another big problem: **Gnome Files only accepts a *static file path* for a custom icon** which meant that after changing the icon theme I still had to manually update the icons to match the accent color. I thought maybe symlinks would be the answer but after experimenting I found that replacing the symlinked file would not update the custom icon. If I wanted it to work without some sort of painful manual process I was going to have to build a solution myself. 
 
