@@ -90,6 +90,11 @@
     color: var(--color-bg);
 }
 
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
 /*
  * ----------------------------------------
  * Base Styles & Resets
@@ -99,6 +104,16 @@
 ::selection {
     background: var(--color-accent);
     color: var(--color-selection-text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 *,
@@ -132,6 +147,12 @@ body {
     color: var(--color-text-light);
     border-radius: 8px;
     transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .wrapper {
+        animation: fadeContent 0.4s ease-out;
+    }
 }
 
 .wrapper::after {
@@ -206,7 +227,7 @@ body {
 /* Social Icons */
 .social-icon {
     color: var(--color-text);
-    transition: color 0.2s ease, text-shadow 0.2s ease;
+    transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
     border: none !important;
     padding: 0;
     margin: 0 8px;
@@ -215,6 +236,7 @@ body {
 .social-icon:hover {
     color: var(--color-accent);
     text-shadow: 0 0 8px rgba(140, 150, 255, 0.5);
+    transform: scale(1.15);
 }
 
 .social-icon svg {
@@ -334,6 +356,20 @@ body {
     background: var(--color-card-bg-hover);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .projects-grid .card {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        transition-delay: var(--enter-delay, 0ms);
+    }
+
+    .projects-grid .card.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .card h3 {
     color: var(--color-accent);
     margin-top: 0;
@@ -440,6 +476,11 @@ img.loaded {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes fadeContent {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes ripple-out {
